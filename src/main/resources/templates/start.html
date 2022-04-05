@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> <!-- xmlns help for when thymeleaf is used -->
+<head>
+    <meta charset="UTF-8">
+    <title>start</title>
+    <link rel="stylesheet" href="start.css">    <!-- example of access to css document -->
+</head>
+<body>
+
+<div th:object="${user}" th:text="${user.userName}"> </div> <!-- can insert variables through the controller model here instead of "TEST" -->
+
+<div>test</div>             <!-- normal html text -->
+
+</body>
+</html>
